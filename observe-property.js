@@ -12,7 +12,7 @@
         var value;
         var that = this;
 
-        if (!propName in this) throw new Error('Name is not in object');
+        if (!propName in this) throw new Error('[' + propName + '] is not in object');
         if (typeof callback !== 'function') throw new Error('Callback is not a function');
         if (typeof Object.defineProperty !== 'function') throw new Error('Object.defineProperty is missing');
 
